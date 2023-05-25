@@ -1,10 +1,10 @@
 import { AboutContainer } from "./styles";
 import { FcAbout } from "react-icons/all";
-import Fade from "react-reveal/Fade";
+import { Fade } from "react-awesome-reveal";
 export const About = () => {
   return (
     <AboutContainer>
-      <Fade>
+      <Fade triggerOnce={true}>
         <h1>
           Sobre o estúdio Dijiane Dutra...
           <FcAbout />
