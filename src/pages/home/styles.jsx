@@ -42,6 +42,10 @@ export const HomeContainer = styled.div`
       font-size: 1.2em;
       font-family: Tahoma;
     }
+    .section-info button a {
+      text-decoration: none;
+      color: white;
+    }
     .section-info button:hover {
       background-color: #475685;
     }

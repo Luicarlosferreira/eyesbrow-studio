@@ -11,7 +11,9 @@ export const HomePage = () => {
             <p>
               Seja um reflexo do melhor que você pode desejar para si mesma.
             </p>
-            <button>Agendar</button>
+            <button>
+              <a href="#schedule">Agendar</a>
+            </button>
           </div>
         </section>
 
