@@ -4,7 +4,7 @@ Simple project with some tools. Well i used React router dom as my routers, cont
 
 ## Funcionalities
 
-- Authenticate Pages
+- Authenticated Pages
 - Admin Dashboard
 - API REST as service
 - Redirection Pages
