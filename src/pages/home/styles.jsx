@@ -216,6 +216,9 @@ export const HomeContainer = styled.div`
   }
 
   @media (max-width: 750px) {
+    section {
+      height: 100vh;
+    }
     .info-container {
       width: 100%;
       display: flex;
@@ -258,6 +261,7 @@ export const HomeContainer = styled.div`
 
   @media (max-width: 600px) {
     section {
+      height: 100vh;
       .section-info {
         color: white;
         font-family: serif;
