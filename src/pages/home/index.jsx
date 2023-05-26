@@ -82,13 +82,10 @@ export const HomePage = () => {
             Contacto
           </h3>
           <div className="social_medias">
-            <a
-              href="https://www.instagram.com/dijiane_sobrancelha/"
-              target="_blank"
-            >
+            <a href="https://encurtador.com.br/ajrwK" target="_blank">
               <BsInstagram />
             </a>
-            <a href="#">
+            <a href="https://wa.link/up0avx" target="_blank">
               <BsWhatsapp />
             </a>
           </div>
