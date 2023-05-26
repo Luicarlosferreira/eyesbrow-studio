@@ -44,8 +44,8 @@ export const HomePage = () => {
             <div>
               <h1>Local</h1>
               <p>
-                Nosso espaço está no Porto, em Porto/Rua Santa Catarina 1557
-                piso 1 loja 30 galerias Atlantis.
+                Nosso espaço está no distrito do Porto, Porto - Rua Santa
+                Catarina 1557, piso 1 loja 30 galerias Atlantis.
                 <br />
                 <br />
                 <a
