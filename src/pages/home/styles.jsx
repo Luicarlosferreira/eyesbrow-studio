@@ -266,7 +266,7 @@ export const HomeContainer = styled.div`
         color: white;
         font-family: serif;
         color: white;
-        padding: 50px 15px;
+        padding: 65px 15px;
         display: flex;
         flex-flow: column;
         gap: 10px;
