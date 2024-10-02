@@ -4,6 +4,8 @@ import Api from "../../../services/api";
 import { useNavigate } from "react-router-dom";
 import UseAuth from "../../../hooks/useAuth";
 
+import { Helmet } from "react-helmet";
+
 export const SignIn = () => {
   const { setAuth } = UseAuth();
 
@@ -53,6 +55,9 @@ export const SignIn = () => {
 
   return (
     <SignInContainer>
+      <Helmet>
+        <meta mame="robots" content="noindex nofollow" />
+      </Helmet>
       <h1>Login Admin</h1>
       <form onSubmit={handleSignIn}>
         <div>
