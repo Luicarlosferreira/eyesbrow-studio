@@ -67,19 +67,20 @@ export const PostItems = ({ setUpdate, update }) => {
               <ul key={item._id}>
                 <li>
                   <a>{item.title}</a>
-                  <img
-                    src={item.imageUrl}
-                    alt="Image from post"
-                    width="100px"
-                    height="50px"
-                  />
+                  <img src={item.imageUrl} alt="Image from post" width="100px" height="50px" />
                   <div>
                     <button onClick={() => setId(item._id)}>Editar</button>
                     <button onClick={() => setOpenModal(true)}>Deletar</button>
                   </div>
                 </li>
-                {id && (
-                  <UpdatePost id={id} setId={setId} handleApi={handleApi} />
+                {item._id === id && (
+                  <UpdatePost
+                    id={id}
+                    setId={setId}
+                    handleApi={handleApi}
+                    title={item.title}
+                    description={item.description}
+                  />
                 )}
                 {openModal && (
                   <div id="modalDelet">

@@ -41,38 +41,36 @@ export const ContainerPost = styled.section`
     color: #424f73;
   }
   .container-posts {
-    width: 100%;
-    display: flex;
-    gap: 20px;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: flex-start;
-    overflow-y: scroll;
-    height: 350px;
-  }
-  ul {
-    list-style: none;
     display: flex;
     flex-flow: column;
-    gap: 25px;
+    max-width: 100%;
+    gap: 20px;
+    align-items: flex-start;
+    justify-content: flex-start;
+    overflow-y: scroll;
+    max-height: 350px;
   }
+  ul {
+    width: 90%;
+  }
+
   ul li {
-    min-width: 300px;
-    max-width: 150px;
+    width: 100%;
     display: flex;
     border: 1px solid #424f73;
     padding: 10px;
     gap: 50px;
-    flex-flow: column;
+    flex-flow: row;
     align-items: center;
+    justify-content: flex-end;
     color: #424f73;
     border-radius: 4px;
     flex-wrap: wrap;
   }
   ul li div {
     display: flex;
-
     gap: 6px;
+    flex-flow: column;
   }
   ul li div button {
     padding: 5px 15px;
@@ -117,7 +115,6 @@ export const ContainerPost = styled.section`
       flex-wrap: wrap;
     }
   }
-
   @media (max-width: 450px) {
     padding: 10px;
     width: 100%;

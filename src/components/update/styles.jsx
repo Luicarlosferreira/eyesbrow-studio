@@ -13,6 +13,7 @@ export const UpdatePostContainer = styled.div`
   gap: 2px;
   flex-flow: column;
   h1 {
+    font-size: 16px;
     color: white;
   }
 
@@ -55,5 +56,24 @@ export const UpdatePostContainer = styled.div`
   }
   form button:hover {
     background-color: #acb1d6;
+  }
+
+  @media (max-width: 459px) {
+    form {
+      display: flex;
+      flex-flow: column;
+      width: 70%;
+      gap: 20px;
+    }
+    .buttons {
+      display: flex;
+      flex-flow: row;
+      justify-content: space-between;
+      align-items: center;
+      gap: 20px;
+    }
+    .buttons button {
+      width: 150px;
+    }
   }
 `;

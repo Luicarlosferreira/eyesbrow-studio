@@ -74,11 +74,17 @@ export const PriceItems = ({ updateApi, setUpdateApi }) => {
                     <button onClick={() => setOpenModal(true)}>Delete</button>
                   </div>
                 </li>
-                {id && (
-                  <UpdatePrice id={id} setId={setId} handleApi={handleApi} />
+                {item._id === id && (
+                  <UpdatePrice
+                    id={id}
+                    setId={setId}
+                    handleApi={handleApi}
+                    currPrice={item.price}
+                    currTitle={item.title}
+                  />
                 )}
                 {openModal && (
-                  <div id="modalDelet">
+                  <div id="modalDelete">
                     <h1>Tem certeza que deseja deletar esse post?</h1>
                     <div>
                       <button onClick={() => handleDelet(item._id)}>Sim</button>

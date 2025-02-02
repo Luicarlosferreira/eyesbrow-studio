@@ -39,9 +39,7 @@ export const ServicesPage = () => {
             );
           })}
         {error && (
-          <p style={{ color: "red" }}>
-            Ocorreu algum erro, por favor, recarregue a página!
-          </p>
+          <p style={{ color: "red" }}>Ocorreu algum erro! Por favor, recarregue a página!</p>
         )}
       </section>
     </ServicesContainer>

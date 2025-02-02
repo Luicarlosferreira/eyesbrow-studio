@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route,  } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { CreatePost } from "../pages/admin/post";
 import { CreatePrices } from "../pages/admin/prices";
 import { SignIn } from "../pages/admin/signIn";
@@ -16,7 +16,6 @@ import { ScrollComponent } from "../components/scroll/index";
 
 const RoutesComponent = () => {
   const token = localStorage.getItem("token");
- 
 
   return (
     <BrowserRouter>
@@ -31,18 +30,9 @@ const RoutesComponent = () => {
           <Route path="/blogs" element={<Blogs />} />
           <Route path="/services" element={<ServicesPage />} />
           <Route path="*" element={<Page404 />} />
-          <Route
-            path="/admin/create_post"
-            element={<PrivateRoutes Component={CreatePost} />}
-          />
-          <Route
-            path="/admin/price"
-            element={<PrivateRoutes Component={CreatePrices} />}
-          />
-          <Route
-            path="/admin/settings"
-            element={<PrivateRoutes Component={SettingsAccount} />}
-          />
+          <Route path="/admin/create_post" element={<PrivateRoutes Component={CreatePost} />} />
+          <Route path="/admin/price" element={<PrivateRoutes Component={CreatePrices} />} />
+          <Route path="/admin/settings" element={<PrivateRoutes Component={SettingsAccount} />} />
           <Route path="/admin/signin" element={!token && <SignIn />} />
         </Routes>
       </main>

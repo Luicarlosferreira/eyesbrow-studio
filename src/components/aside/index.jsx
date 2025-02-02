@@ -10,7 +10,7 @@ const AsideManage = () => {
   return (
     <AsideComponent>
       <div>
-        <h1> Admin</h1>
+        <h1> Services</h1>
         <ul>
           <li>
             <Link to="/admin/create_post">

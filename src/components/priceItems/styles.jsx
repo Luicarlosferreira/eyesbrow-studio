@@ -8,7 +8,7 @@ export const ContainerPrices = styled.section`
   gap: 30px;
   flex-wrap: wrap;
 
-  #modalDelet {
+  #modalDelete {
     position: absolute;
     top: 0;
     left: 0;
@@ -21,16 +21,16 @@ export const ContainerPrices = styled.section`
     flex-flow: column;
     gap: 30px;
   }
-  #modalDelet h1 {
+  #modalDelete h1 {
     color: white;
     font-size: 2em;
     font-family: serif, Arial, Helvetica, sans-serif;
   }
-  #modalDelet div {
+  #modalDelete div {
     display: flex;
     gap: 10px;
   }
-  #modalDelet div button {
+  #modalDelete div button {
     padding: 10px 20px;
     border-radius: 5px;
     border: none;

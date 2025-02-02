@@ -4,13 +4,7 @@ import Api from "../../services/api";
 import { ImEye, ImEyeBlocked } from "react-icons/all";
 import { SpinnerComponent } from "../spinner/spinner";
 
-export const FormEditAccount = ({
-  newId,
-  setNewId,
-  handleDataAccount,
-  setSuccess,
-  users,
-}) => {
+export const FormEditAccount = ({ newId, setNewId, handleDataAccount, setSuccess, users }) => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -70,7 +64,7 @@ export const FormEditAccount = ({
         <FormContainer onSubmit={handleUpdateUser}>
           {!loading && (
             <>
-              <p>Coloque o novo dado que quiser.</p>
+              <p>Insira as novas informações.</p>
               <input
                 value={name}
                 placeholder="Nome"
@@ -91,12 +85,8 @@ export const FormEditAccount = ({
                   type="password"
                   onChange={(e) => setPassword(e.target.value)}
                 />
-                {!hidePassword && (
-                  <ImEye onClick={() => setHidePassword(true)} />
-                )}
-                {hidePassword && (
-                  <ImEyeBlocked onClick={() => setHidePassword(false)} />
-                )}
+                {!hidePassword && <ImEye onClick={() => setHidePassword(true)} />}
+                {hidePassword && <ImEyeBlocked onClick={() => setHidePassword(false)} />}
               </section>
             </>
           )}

@@ -1,7 +1,6 @@
 import styled from "styled-components";
 
 export const FooterContainer = styled.footer`
-  background-color: #dbdfea;
   padding: 10px;
   position: ${(props) => props.theme};
   bottom: 0;

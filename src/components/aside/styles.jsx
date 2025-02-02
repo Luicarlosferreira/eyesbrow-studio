@@ -1,8 +1,8 @@
 import styled from "styled-components";
 
 export const AsideComponent = styled.aside`
-  background-color: #8294c4;
-  height: 96.9vh;
+  background-color: #0a132a;
+  height: 450px;
   display: flex;
   align-items: center;
   justify-content: space-between;

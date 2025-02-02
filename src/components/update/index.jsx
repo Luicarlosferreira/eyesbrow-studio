@@ -1,8 +1,8 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { UpdatePostContainer } from "./styles";
 import Api from "../../services/api";
 
-export const UpdatePost = ({ handleApi, id, setId }) => {
+export const UpdatePost = ({ handleApi, id, setId, title, description }) => {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(false);
   const [newTitle, setNewTitle] = useState("");
@@ -35,7 +35,10 @@ export const UpdatePost = ({ handleApi, id, setId }) => {
       setError(true);
     }
   };
-
+  useEffect(() => {
+    setNewTitle(title);
+    setDesc(description);
+  }, [id]);
   return (
     <UpdatePostContainer>
       <h1>Novos dados para o post selecionado</h1>
@@ -60,9 +63,7 @@ export const UpdatePost = ({ handleApi, id, setId }) => {
           </div>
         </form>
       )}
-      {error && (
-        <p style={{ color: "red" }}>Ocorreu um erro, tente novamente.</p>
-      )}
+      {error && <p style={{ color: "red" }}>Ocorreu um erro, tente novamente.</p>}
       {loading && <p>Aguarde a atualização dos dados...</p>}
     </UpdatePostContainer>
   );

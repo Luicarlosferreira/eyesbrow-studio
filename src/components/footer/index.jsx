@@ -12,18 +12,12 @@ const FooterComponent = () => {
   //Title Dynamic routes
   const path = useLocation();
   useEffect(() => {
-    document.title = `Dijiane Dutra  - ${path.pathname
-      .slice(1)
-      .toLocaleUpperCase()}`;
+    document.title = `Dijiane Dutra  - ${path.pathname.slice(1).toLocaleUpperCase()}`;
   }, [path.pathname]);
 
   return (
     <FooterContainer
-      theme={
-        session
-          ? "fixed"
-          : "relative" && path.pathname === "/admin/signin" && "fixed"
-      }
+      theme={session ? "fixed" : "relative" && path.pathname === "/admin/signin" && "fixed"}
     >
       {session ? (
         <span
@@ -32,15 +26,18 @@ const FooterComponent = () => {
             color: "green",
             cursor: "pointer",
             borderBottom: "1px solid black",
+            background: "black",
+            padding: 6,
+            border: "1px solid",
+            outline: "none",
+            borderRadius: "5px",
           }}
           to="/"
         >
           Página Usuário
         </span>
       ) : (
-        <Link to="/admin/signin">
-          Copyright 2023.Dijiane-Studio | Todos os direitos reservados
-        </Link>
+        <Link to="/admin/signin">Copyright 2023.Dijiane-Studio | Todos os direitos reservados</Link>
       )}
     </FooterContainer>
   );
